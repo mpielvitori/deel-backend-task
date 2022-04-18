@@ -9,12 +9,22 @@
     "sqlite3": "^4.0.1"
   },
   "scripts": {
+    "lint": "eslint ./",
+    "test": "jest",
+    "test-coverage": "jest --coverage",
     "start": "nodemon ./src/server.js",
-    "seed": "node ./scripts/seedDb.js"
+    "seed": "run-func ./scripts/seedDb.js seed"
   },
   "devDependencies": {
+    "eslint": "5.16.0",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jest": "22.15.2",
+    "jest": "24.8.0",
     "concurrently": "4.1.0",
-    "nodemon": "1.19.1"
+    "nodemon": "1.19.1",
+    "supertest": "6.1.6",
+    "run-func": "3.0.0"
   },
   "engines": {
     "node": ">=10.16.3"

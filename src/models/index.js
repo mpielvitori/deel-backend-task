@@ -6,6 +6,7 @@ const Profile = require('./Profile');
 const connection = new Sequelize({
   dialect: 'sqlite',
   storage: './database.sqlite3',
+  logging: false,
 });
 
 const models = {
